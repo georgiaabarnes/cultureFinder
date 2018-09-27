@@ -1,0 +1,98 @@
+// Global styling for this template
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    @include body-font;
+}
+
+a {
+    color: $theme-primary;
+    @include transition-all;
+    &:hover,
+    &:focus {
+        color: darken($theme-primary, 10%);
+    }
+}
+
+hr {
+    max-width: 100px;
+    border-width: 1px;
+}
+
+hr.light {
+    border-color: white;
+}
+
+h1 {
+    @include heading-font;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include body-font;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 25px 0;
+    h2 {
+        font-size: 50px;
+    }
+}
+
+.btn-outline-dark {
+    color: $theme-primary;
+    border: 1px solid;
+    border-color: $theme-primary;
+  }
+  
+.btn-outline-dark:hover, .btn-outline-dark:focus, .btn-outline-dark:active, .btn-outline-dark.active {
+    color: white;
+    border-color: $theme-tertiary;
+    background-color: $theme-tertiary;
+}
+
+.btn-tertiary {
+    color: white;
+    background-color: $theme-tertiary;
+  }
+  
+.btn-tertiary:hover, .btn-tertiary:focus, .btn-tertiary:active, .btn-tertiary.active {
+    color: white;
+    border: 1px solid white;
+}
+
+.feature-icon {
+    font-size: 100px;
+    background: -webkit-gradient(linear, right top, left top, from($theme-secondary), to($theme-third));
+    background: linear-gradient(to left, $theme-secondary, $theme-third);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.white {
+    color: #fff;
+}
+
+#cta-1 {
+    background: url('../img/CultureFinderHero.png'), $theme-primary;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#more-features {
+    background-color: #eee;
+}
