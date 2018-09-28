@@ -3,7 +3,6 @@ header.masthead {
     position: relative;
 
     width: 100%;
-    padding-top: 100px;
     padding-bottom: 100px;
 
     color: white;
@@ -12,6 +11,7 @@ header.masthead {
     // background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-primary, $theme-secondary);
     // background: url('../img/bg-pattern.png'), linear-gradient(to left, $theme-primary, $theme-secondary);
     .header-content {
+        padding-top: 100px;
         margin-bottom: 100px;
         h1 {
             font-size: 50px;
@@ -37,5 +37,29 @@ header.masthead {
         .device-container {
             max-width: 325px;
         }
+    }
+    @media (min-width: 1200px) {
+        .title-container{
+            h1 {
+                transform: translateY(6rem);
+            animation: up 300ms linear forwards;
+                animation-delay: 1000ms;
+            }
+        } 
+    }
+    .title-container {
+        overflow: hidden;
+        h1 {
+            transform: translateY(6rem);
+            animation: up 300ms linear forwards;
+        }
+    }
+
+    @keyframes up {
+	
+        100% {
+            transform: translateY(0);
+        }
+        
     }
 }
