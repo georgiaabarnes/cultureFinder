@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
 }
 
@@ -36,9 +36,8 @@ hr.light {
 }
 
 h1 {
-  font-family: 'Archivo Black', 'sans-serif';
+  font-family: 'Inconsolata', monospace;
   font-weight: 400;
-  letter-spacing: 1px;
 }
 
 h2,
@@ -46,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
 }
 
@@ -141,6 +140,35 @@ section h2 {
 .highlight:hover::after {
   height: 115%;
   width: 102%;
+}
+
+@media (max-width: 442px) {
+  .highlight::after {
+    display: none;
+  }
+}
+
+.persit-highlight {
+  -webkit-transition: color 250ms, text-shadow 250ms;
+  transition: color 250ms, text-shadow 250ms;
+  text-decoration: none;
+  position: relative;
+  z-index: 0;
+}
+
+.persit-highlight::after {
+  position: absolute;
+  z-index: -1;
+  bottom: -5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: '';
+  height: 115%;
+  width: 103%;
+  background-color: #e52a6f;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
 }
 
 .transform:hover, .row:hover > .transform-img {
@@ -383,16 +411,14 @@ section h2 {
   background-color: white;
   -webkit-transition: all .35s;
   transition: all .35s;
-  font-family: 'Archivo Black', 'sans-serif';
+  font-family: 'Inconsolata', monospace;
   font-weight: 400;
-  letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand {
   color: #67aeca;
-  font-family: 'Archivo Black', 'sans-serif';
+  font-family: 'Inconsolata', monospace;
   font-weight: 400;
-  letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
@@ -407,8 +433,8 @@ section h2 {
 
 #mainNav .navbar-nav > li > a {
   font-size: 11px;
-  font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
-  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -482,6 +508,7 @@ header.masthead {
 header.masthead .header-content {
   padding-top: 100px;
   margin-bottom: 100px;
+  display: none;
 }
 
 header.masthead .header-content h1 {
@@ -534,6 +561,7 @@ header.masthead .title-container h1 {
   transform: translateY(6rem);
   -webkit-animation: up 300ms linear forwards;
   animation: up 300ms linear forwards;
+  padding-left: 7px;
 }
 
 @-webkit-keyframes up {
@@ -828,8 +856,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .btn {
   border-radius: 300px;
-  font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
-  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 

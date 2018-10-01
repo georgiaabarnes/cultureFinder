@@ -63,18 +63,17 @@
 }
 
 @mixin heading-font {
-    font-family: 'Archivo Black', 'sans-serif';
+    font-family: 'Inconsolata', monospace;
     font-weight: 400;
-    letter-spacing: 1px;
 }
 
 @mixin body-font {
-    font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
 }
 
 @mixin alt-font {
-    font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
-    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }

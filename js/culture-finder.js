@@ -83,9 +83,11 @@
     setTimeout(function(){
       $("#transition-container").remove();
       $('#mainNav').show();
+      $('.header-content').show();
     }, 1000)
   } else {
     $('#mainNav').show();
+    $('.header-content').show();
   }
 
   $(window).scroll( function(){
