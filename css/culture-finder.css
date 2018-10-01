@@ -36,7 +36,7 @@ hr.light {
 }
 
 h1 {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Patua One', sans-serif;
   font-weight: 400;
 }
 
@@ -98,7 +98,7 @@ section h2 {
 }
 
 #cta-1 {
-  background: url("../img/CultureFinderHero.png"), #67aeca;
+  background: url("../img/Hero1.png"), #67aeca;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -411,13 +411,13 @@ section h2 {
   background-color: white;
   -webkit-transition: all .35s;
   transition: all .35s;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Patua One', sans-serif;
   font-weight: 400;
 }
 
 #mainNav .navbar-brand {
   color: #67aeca;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Patua One', sans-serif;
   font-weight: 400;
 }
 
@@ -502,7 +502,9 @@ header.masthead {
   width: 100%;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/EdwardLiangHero.png"), #67aeca;
+  background: url("../img/Hero4.png"), #67aeca;
+  background-size: cover;
+  background-position: center;
 }
 
 header.masthead .header-content {
