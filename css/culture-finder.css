@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
   letter-spacing: 1px;
 }
 
@@ -36,7 +36,7 @@ hr.light {
 }
 
 h1 {
-  font-family: 'Patua One', sans-serif;
+  font-family: 'Francois One', sans-serif;
   font-weight: 400;
 }
 
@@ -45,12 +45,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
   letter-spacing: 1px;
 }
 
 p {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -411,13 +411,13 @@ section h2 {
   background-color: white;
   -webkit-transition: all .35s;
   transition: all .35s;
-  font-family: 'Patua One', sans-serif;
+  font-family: 'Francois One', sans-serif;
   font-weight: 400;
 }
 
 #mainNav .navbar-brand {
   color: #67aeca;
-  font-family: 'Patua One', sans-serif;
+  font-family: 'Francois One', sans-serif;
   font-weight: 400;
 }
 
@@ -433,7 +433,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a {
   font-size: 11px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -858,7 +858,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .btn {
   border-radius: 300px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
